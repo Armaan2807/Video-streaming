@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <button>view all</button>
+            <div class="logo">
+                <i class="fas fa-play"></i>
+                Net stream
+            </div>
+            <button>subscribe</button>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="img-container">
+                            <img src="img-1.jpg" alt="image-1" class="play">
+                        </div>
+                        <h2>The Matrix</h2>
+                        <p class="green">Take the green pill to get into the zone.</p>
+                        <button>WATCH NOW</button>
+                    </div>
+                    <div class="col">
+                        <div class="img-container">
+                            <img src="img-2.jpg" alt="Image-2" class="play">
+                        </div>
+                        <h2>F and F</h2>
+                        <p class="red">Take the red pill to get into the zone.</p>
+                        <button>WATCH NOW</button>
+                    </div>
+                    <div class="col">
+                        <div class="img-container">
+                            <img src="img-3.jpg" alt="Image-3" class="play">
+                        </div>
+                        <h2>The Outback</h2>
+                        <p class="orange">Take the orange pill to get into the zone.</p>
+                        <button>WATCH NOW</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+        margin: 0px;
+
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 1000px;
+        max-width: 100%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        font-size: 1.5rem;
+        padding: 2rem;
+        width: 30%;
+        text-align: center;
+    }
+
+    .col img {
+        max-width: 100%;
+    }
+
+    .img-container {
+        position: relative;
+
+    }
+
+    .img-container::after {
+        content: "\f04b";
+        border: 20px solid white;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 0;
+        height: 0px;
+        z-index: 10;
+    }
+
+    nav {
+        border-bottom: 5px solid white;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: center;
+        padding: 2rem 0px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .logo i {
+        display: block;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        background-color: white;
+        border: 0px;
+        color: black;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem 2rem;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .orange {
+        color: orange;
+    }
+</style>
